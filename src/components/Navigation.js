@@ -4,16 +4,26 @@ import { Link } from 'gatsby'
 
 const Navigation = styled.nav`
   display: flex;
+  width: 50vw;
+  margin: 0 auto;
 `
 
 const NavigationItems = styled.ul`
+  width: 100%;
   display: flex;
+  margin: 0;
+  justify-content: space-around;
+`
+
+const NavigationItem = styled.li`
+  list-style: none;
+  text-decoration: none;
 `
 
 const NavLink = ({ to, children }) => (
-  <ul>
+  <NavigationItem>
     <Link to={to}>{children}</Link>
-  </ul>
+  </NavigationItem>
 )
 
 export default () => {
