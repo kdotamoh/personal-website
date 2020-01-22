@@ -1,12 +1,13 @@
 module.exports = {
   plugins: [
+    'gatsby-plugin-root-import',
+    'gatsby-plugin-mdx',
     {
       resolve: `gatsby-plugin-styled-components`,
       options: {
         displayName: true
       }
     },
-    'gatsby-plugin-root-import',
     {
       resolve: `gatsby-plugin-typography`,
       options: {

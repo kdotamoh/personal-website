@@ -1,11 +1,15 @@
 import React from 'react'
 
+import { Container } from 'src/components/styled'
+
 import Layout from 'src/components/Layout'
 
 export default () => {
   return (
     <Layout>
-      <div>Work</div>
+      <Container mt="5rem">
+        <p>Coming soon</p>
+      </Container>
     </Layout>
   )
 }
